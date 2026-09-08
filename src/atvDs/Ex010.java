@@ -6,29 +6,28 @@ public class Ex010 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double saldo = 1000.0;
-        int opcao;
+        int op;
 
         do {
-            System.out.println("\ncaixa");
-            System.out.println("Saldo atual: R$ " + saldo);
-            System.out.println("1 - Sacar");
-            System.out.println("2 - Sair");
-            System.out.print("Escolha uma opção: ");
-            opcao = sc.nextInt();
+            System.out.println("saldo: " + saldo);
+            System.out.println("1 - sacar");
+            System.out.println("2 - sair");
+            System.out.print("opcao: ");
+            op = sc.nextInt();
 
-            if (opcao == 1) {
-                System.out.print("Digite o valor do saque: ");
-                double valor = sc.nextDouble();
-                if (valor > saldo) {
-                    System.out.println("Saldo insuficiente!");
+            if (op == 1) {
+                System.out.print("valor do saque: ");
+                double v = sc.nextDouble();
+                if (v > saldo) {
+                    System.out.println("saldo insuficiente!");
                 } else {
-                    saldo -= valor;
-                    System.out.println("Saque realizado com sucesso!");
+                    saldo -= v;
+                    System.out.println("saque feito.");
                 }
             }
-        } while (opcao != 2);
+        } while (op != 2);
 
-        System.out.println("Saldo final: R$ " + saldo);
+        System.out.println("saldo final: " + saldo);
         sc.close();
     }
 }

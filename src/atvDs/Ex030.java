@@ -5,48 +5,43 @@ import java.util.Scanner;
 public class Ex030 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int opcao;
+        int op;
 
         do {
-            System.out.println("\n--- Calculadora ---");
-            System.out.println("1 - Soma");
-            System.out.println("2 - Subtração");
-            System.out.println("3 - Multiplicação");
-            System.out.println("4 - Divisão");
-            System.out.println("5 - Sair");
-            System.out.print("Escolha uma opção: ");
-            opcao = sc.nextInt();
+            System.out.println("1-soma 2-sub 3-mult 4-div 5-sair");
+            System.out.print("opcao: ");
+            op = sc.nextInt();
 
-            if (opcao >= 1 && opcao <= 4) {
-                System.out.print("Digite o primeiro número: ");
+            if (op >= 1 && op <= 4) {
+                System.out.print("num 1: ");
                 double a = sc.nextDouble();
-                System.out.print("Digite o segundo número: ");
+                System.out.print("num 2: ");
                 double b = sc.nextDouble();
 
-                switch (opcao) {
+                switch (op) {
                     case 1:
-                        System.out.println("Resultado: " + (a + b));
+                        System.out.println("res: " + (a + b));
                         break;
                     case 2:
-                        System.out.println("Resultado: " + (a - b));
+                        System.out.println("res: " + (a - b));
                         break;
                     case 3:
-                        System.out.println("Resultado: " + (a * b));
+                        System.out.println("res: " + (a * b));
                         break;
                     case 4:
                         if (b == 0) {
-                            System.out.println("Erro: divisão por zero!");
+                            System.out.println("erro: divisao por zero");
                         } else {
-                            System.out.println("Resultado: " + (a / b));
+                            System.out.println("res: " + (a / b));
                         }
                         break;
                 }
-            } else if (opcao != 5) {
-                System.out.println("Opção inválida!");
+            } else if (op != 5) {
+                System.out.println("opcao invalida");
             }
-        } while (opcao != 5);
+        } while (op != 5);
 
-        System.out.println("Encerrando a calculadora...");
+        System.out.println("saindo...");
         sc.close();
     }
 }

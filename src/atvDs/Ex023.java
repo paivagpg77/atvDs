@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class Ex023 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite uma palavra: ");
-        String palavra = sc.nextLine();
+        System.out.print("digite uma palavra: ");
+        String p = sc.nextLine();
 
-        boolean palindroma = true;
-        int inicio = 0;
-        int fim = palavra.length() - 1;
+        boolean pal = true;
+        int ini = 0;
+        int fim = p.length() - 1;
 
-        for (int i = 0; i < palavra.length() / 2; i++) {
-            if (palavra.charAt(inicio) != palavra.charAt(fim)) {
-                palindroma = false;
+        for (int i = 0; i < p.length() / 2; i++) {
+            if (p.charAt(ini) != p.charAt(fim)) {
+                pal = false;
                 break;
             }
-            inicio++;
+            ini++;
             fim--;
         }
 
-        if (palindroma) {
-            System.out.println("\"" + palavra + "\" é palíndroma.");
+        if (pal) {
+            System.out.println(p + " e palindroma");
         } else {
-            System.out.println("\"" + palavra + "\" não é palíndroma.");
+            System.out.println(p + " nao e palindroma");
         }
         sc.close();
     }

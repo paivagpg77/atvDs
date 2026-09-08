@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Ex021 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite uma frase: ");
-        String frase = sc.nextLine();
+        System.out.print("digite uma frase: ");
+        String f = sc.nextLine();
 
-        int vogais = 0;
-        for (int i = 0; i < frase.length(); i++) {
-            char c = Character.toLowerCase(frase.charAt(i));
+        int v = 0;
+        for (int i = 0; i < f.length(); i++) {
+            char c = Character.toLowerCase(f.charAt(i));
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-                vogais++;
+                v++;
             }
         }
 
-        System.out.println("Quantidade de vogais: " + vogais);
+        System.out.println("qtd vogais: " + v);
         sc.close();
     }
 }

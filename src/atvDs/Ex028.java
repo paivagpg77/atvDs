@@ -5,24 +5,24 @@ import java.util.Scanner;
 public class Ex028 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o valor investido: ");
-        double valor = sc.nextDouble();
-        System.out.print("Digite a taxa mensal (ex: 0.01 para 1%%): ");
+        System.out.print("valor investido: ");
+        double v = sc.nextDouble();
+        System.out.print("taxa mensal (ex 0.01): ");
         double taxa = sc.nextDouble();
-        System.out.print("Digite o limite a ultrapassar: ");
-        double limite = sc.nextDouble();
-        System.out.print("Digite o número de meses a simular: ");
+        System.out.print("limite: ");
+        double lim = sc.nextDouble();
+        System.out.print("meses: ");
         int meses = sc.nextInt();
 
-        boolean ultrapassou = false;
+        boolean passou = false;
 
-        for (int mes = 1; mes <= meses; mes++) {
-            valor = valor * (1 + taxa);
-            System.out.println("Mês " + mes + ": R$ " + valor);
+        for (int m = 1; m <= meses; m++) {
+            v = v * (1 + taxa);
+            System.out.println("mes " + m + ": " + v);
 
-            if (!ultrapassou && valor > limite) {
-                System.out.println(">>> O valor ultrapassou o limite no mês " + mes + "!");
-                ultrapassou = true;
+            if (!passou && v > lim) {
+                System.out.println("passou do limite no mes " + m);
+                passou = true;
             }
         }
         sc.close();

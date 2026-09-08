@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Ex006 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite um número: ");
+        System.out.print("digite um numero: ");
         int n = sc.nextInt();
 
         if (n < 0) {
-            System.out.println("Erro: número negativo.");
+            System.out.println("erro: numero negativo.");
         } else {
-            long fatorial = 1;
+            long f = 1;
             for (int i = 1; i <= n; i++) {
-                fatorial *= i;
+                f *= i;
             }
-            System.out.println("Fatorial: " + fatorial);
+            System.out.println("fatorial: " + f);
         }
         sc.close();
     }

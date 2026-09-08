@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class Ex022 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite uma frase: ");
-        String frase = sc.nextLine();
+        System.out.print("digite uma frase: ");
+        String f = sc.nextLine();
 
-        int maiusculas = 0;
-        int minusculas = 0;
+        int mai = 0;
+        int min = 0;
 
-        for (int i = 0; i < frase.length(); i++) {
-            char c = frase.charAt(i);
+        for (int i = 0; i < f.length(); i++) {
+            char c = f.charAt(i);
             if (Character.isUpperCase(c)) {
-                maiusculas++;
+                mai++;
             } else if (Character.isLowerCase(c)) {
-                minusculas++;
+                min++;
             }
         }
 
-        System.out.println("Letras maiúsculas: " + maiusculas);
-        System.out.println("Letras minúsculas: " + minusculas);
+        System.out.println("maiusculas: " + mai);
+        System.out.println("minusculas: " + min);
         sc.close();
     }
 }

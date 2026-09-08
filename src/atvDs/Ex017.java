@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Ex017 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite um número inteiro: ");
+        System.out.print("digite um numero: ");
         int n = sc.nextInt();
 
-        int contador = 0;
+        int c = 0;
         if (n == 0) {
-            contador = 1;
+            c = 1;
         } else {
             n = Math.abs(n);
             while (n > 0) {
-                contador++;
+                c++;
                 n /= 10;
             }
         }
 
-        System.out.println("Quantidade de dígitos: " + contador);
+        System.out.println("qtd digitos: " + c);
         sc.close();
     }
 }

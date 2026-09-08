@@ -2,21 +2,21 @@ package atvDs;
 
 public class Ex012 {
     public static void main(String[] args) {
-        int[] numeros = {23, 45, 12, 67, 8, 90, 34};
+        int[] num = {23, 45, 12, 67, 8, 90, 34};
 
-        int maior = numeros[0];
-        int menor = numeros[0];
+        int mai = num[0];
+        int men = num[0];
 
-        for (int i = 1; i < numeros.length; i++) {
-            if (numeros[i] > maior) {
-                maior = numeros[i];
+        for (int i = 1; i < num.length; i++) {
+            if (num[i] > mai) {
+                mai = num[i];
             }
-            if (numeros[i] < menor) {
-                menor = numeros[i];
+            if (num[i] < men) {
+                men = num[i];
             }
         }
 
-        System.out.println("Maior valor: " + maior);
-        System.out.println("Menor valor: " + menor);
+        System.out.println("maior: " + mai);
+        System.out.println("menor: " + men);
     }
 }

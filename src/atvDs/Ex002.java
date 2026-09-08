@@ -2,12 +2,12 @@ package atvDs;
 
 public class Ex002 {
     public static void main(String[] args) {
-        int soma = 0;
+        int s = 0;
         for (int i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
-                soma += i;
+                s += i;
             }
         }
-        System.out.println("Soma dos pares entre 1 e 100: " + soma);
+        System.out.println("soma pares: " + s);
     }
 }

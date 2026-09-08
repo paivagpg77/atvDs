@@ -2,9 +2,9 @@ package atvDs;
 
 public class Ex029 {
     public static void main(String[] args) {
-        for (int ano = 2000; ano <= 2030; ano++) {
-            if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
-                System.out.println(ano + " é bissexto.");
+        for (int a = 2000; a <= 2030; a++) {
+            if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)) {
+                System.out.println(a + " e bissexto");
             }
         }
     }

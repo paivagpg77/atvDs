@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Ex020 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite um número N: ");
+        System.out.print("digite n: ");
         long n = sc.nextLong();
 
-        int passos = 0;
-        System.out.print("Sequência: " + n);
+        int p = 0;
+        System.out.print("seq: " + n);
 
         while (n != 1) {
             if (n % 2 == 0) {
@@ -18,10 +18,11 @@ public class Ex020 {
                 n = n * 3 + 1;
             }
             System.out.print(" -> " + n);
-            passos++;
+            p++;
         }
 
-        System.out.println("\nNúmero de passos: " + passos);
+        System.out.println();
+        System.out.println("passos: " + p);
         sc.close();
     }
 }

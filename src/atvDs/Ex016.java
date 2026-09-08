@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class Ex016 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite um número: ");
+        System.out.print("digite um numero: ");
         int n = sc.nextInt();
 
-        int quantidadeDigitos = String.valueOf(n).length();
-        int soma = 0;
-        int temp = n;
+        int qtd = String.valueOf(n).length();
+        int s = 0;
+        int t = n;
 
-        for (int i = 0; i < quantidadeDigitos; i++) {
-            int digito = temp % 10;
-            soma += Math.pow(digito, quantidadeDigitos);
-            temp /= 10;
+        for (int i = 0; i < qtd; i++) {
+            int d = t % 10;
+            s += Math.pow(d, qtd);
+            t /= 10;
         }
 
-        if (soma == n) {
-            System.out.println(n + " é um número de Armstrong.");
+        if (s == n) {
+            System.out.println(n + " e armstrong");
         } else {
-            System.out.println(n + " não é um número de Armstrong.");
+            System.out.println(n + " nao e armstrong");
         }
         sc.close();
     }

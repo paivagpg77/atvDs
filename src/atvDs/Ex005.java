@@ -2,19 +2,19 @@ package atvDs;
 
 public class Ex005 {
     public static void main(String[] args) {
-        int total = 0;
+        int t = 0;
         for (int i = 2; i <= 50; i++) {
-            boolean primo = true;
+            boolean p = true;
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
-                    primo = false;
+                    p = false;
                     break;
                 }
             }
-            if (primo) {
-                total++;
+            if (p) {
+                t++;
             }
         }
-        System.out.println("Quantidade de números primos entre 1 e 50: " + total);
+        System.out.println("qtd primos: " + t);
     }
 }
