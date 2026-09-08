@@ -1,13 +1,12 @@
 package atvDs;
-
 import java.util.Scanner;
 
 public class Ex036 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        boolean crescente = true;
-        boolean primeiro = true;
-        int anterior = 0;
+        boolean cres = true;
+        boolean pri = true;
+        int ant = 0;
 
         System.out.println("Digite números inteiros (digite -1 para parar):");
         while (true) {
@@ -16,15 +15,15 @@ public class Ex036 {
                 break;
             }
 
-            if (!primeiro && numero <= anterior) {
-                crescente = false;
+            if (!pri && numero <= ant) {
+                cres = false;
             }
 
-            anterior = numero;
-            primeiro = false;
+            ant = numero;
+            pri = false;
         }
 
-        if (crescente) {
+        if (cres) {
             System.out.println("A sequência informada foi crescente.");
         } else {
             System.out.println("A sequência informada não foi crescente.");

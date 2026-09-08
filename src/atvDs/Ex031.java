@@ -8,26 +8,26 @@ public class Ex031 {
         System.out.print("Quantos valores deseja informar? ");
         int n = sc.nextInt();
 
-        int positivos = 0;
-        int negativos = 0;
-        int zeros = 0;
+        int posi = 0;
+        int nega = 0;
+        int z = 0;
 
         for (int i = 1; i <= n; i++) {
             System.out.print("Digite o valor " + i + ": ");
             double valor = sc.nextDouble();
 
             if (valor > 0) {
-                positivos++;
+                posi++;
             } else if (valor < 0) {
-                negativos++;
+                nega++;
             } else {
-                zeros++;
+                z++;
             }
         }
 
-        System.out.println("Positivos: " + positivos);
-        System.out.println("Negativos: " + negativos);
-        System.out.println("Zeros: " + zeros);
+        System.out.println("Positivos: " + posi);
+        System.out.println("Negativos: " + nega);
+        System.out.println("Zeros: " + z);
         sc.close();
     }
 }

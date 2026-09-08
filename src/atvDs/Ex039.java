@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Ex039 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o limite N: ");
+        System.out.print("Digite o limite n: ");
         int limite = sc.nextInt();
 
-        System.out.println("Números triangulares até " + limite + ":");
+        System.out.println("numeros triangulares até " + limite + ":");
         int soma = 0;
         for (int i = 1; soma <= limite; i++) {
             soma += i;

@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Ex032 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o número de linhas: ");
+        System.out.print("digite o nu de linha: ");
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            for (int espaco = 1; espaco <= n - i; espaco++) {
+            for (int esp = 1; esp <= n - i; esp++) {
                 System.out.print(" ");
             }
-            for (int asterisco = 1; asterisco <= (2 * i - 1); asterisco++) {
-                if (asterisco >= 1) {
+            for (int aste = 1; aste <= (2 * i - 1); aste++) {
+                if (aste >= 1) {
                     System.out.print("*");
                 }
             }

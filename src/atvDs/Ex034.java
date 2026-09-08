@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Ex034 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o primeiro número: ");
+        System.out.print("digite o 1: ");
         int a = sc.nextInt();
-        System.out.print("Digite o segundo número: ");
+        System.out.print("digite o 2: ");
         int b = sc.nextInt();
 
         int x = a;

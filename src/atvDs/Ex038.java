@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class Ex038 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite a base: ");
+        
+        System.out.print("digite a base: ");
         double base = sc.nextDouble();
-        System.out.print("Digite o expoente (inteiro >= 0): ");
+
+
+        System.out.print("digite o expoente (inteiro >= 0): ");
         int expoente = sc.nextInt();
 
         double resultado;
